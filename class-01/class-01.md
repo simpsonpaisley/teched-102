@@ -40,5 +40,74 @@ To write a block of code, you can indent each line by 4 spaces:
         </head>
     </html>
 
+Alternativly, you can use 3 backticks.
+
+```
+<html>
+
+    <head>
+
+    </head>
+
+    <body>
+
+    </body>
+
+</html>
+
+```
+
+#### Unordered and Ordered Lists
+
+To make an unordered list, you can use either the `-` key, the `*` key, or the `+`. For example:
+
+```
+    - List Item
+    - List Item
+
+```
+
+```
+    + List Item
+    + List Item
+```
+
+```
+    * List Item
+    * List Item
+```
+
+To make an ordered list, you can simply use the numbers:
+
+```
+    1. List Item
+    2. List Item
+```
+
+#### Styling
+
+There are several styling options you can use in markdown. These are:
+
+For **Bold** text, you can use 2 asterixes: `**bold text**`.
+
+For *italic* text, you can use 1 asterix: `*italic text*`.
+
+And for ***Bold and Italic*** text, you can use 3 asterixes: `***Bold and Italic Text***
+
+#### Inserting Images
+
+To insert an image in markdown, you can use the syntax 
+
+```
+    ![Alt Text](image link)
+```
+
+#### Hyperlinks
+
+To insert a link in markdown, you can use the syntax
+
+```
+    [Link Title](link address)
+```
 
 
