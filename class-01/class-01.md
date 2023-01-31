@@ -92,7 +92,7 @@ For **Bold** text, you can use 2 asterixes: `**bold text**`.
 
 For *italic* text, you can use 1 asterix: `*italic text*`.
 
-And for ***Bold and Italic*** text, you can use 3 asterixes: `***Bold and Italic Text***
+And for ***Bold and Italic*** text, you can use 3 asterixes: `***Bold and Italic Text***`
 
 #### Inserting Images
 
