@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Guess The Animal</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+        }
+
+        p,
+        button {
+            font-size: 20px;
+
+        }
+
+        h1 {
+            font-family: 'Cabin Sketch', cursive;
+            font-weight: 700;
+            font-size: 50px;
+        }
+
+        .startButton {
+            margin-right: 25px;
+            margin-bottom: 5px;
+        }
+    </style>
+
+    <script>
+        function button1Handler() {
+
+            var guessOne;
+
+            guessOne = prompt("Clue: Lives in a den.")
+
+            if (guessOne == "fox" || guessOne == "Fox") {
+
+                document.getElementById("clue").innerHTML = "Well Done!";
+                document.getElementById("animalPhoto").src = "https://i.natgeofe.com/k/6496b566-0510-4e92-84e8-7a0cf04aa505/red-fox-portrait_square.jpg";
+
+            } else {
+                var guessTwo;
+
+                guessTwo = prompt("Clue: Is the biggest predator in the UK");
+
+
+                if (guessTwo == "fox" || guessTwo == "Fox") {
+                    document.getElementById("clue").innerHTML = "Well Done!";
+                    document.getElementById("animalPhoto").src = "https://i.natgeofe.com/k/6496b566-0510-4e92-84e8-7a0cf04aa505/red-fox-portrait_square.jpg";
+                } else {
+                    var guessThree;
+
+                    guessThree = prompt("Final Clue: Likes to steal chickens");
+
+                    if (guessThree == "fox" || guessThree == "Fox") {
+                        document.getElementById("clue").innerHTML = "Well Done!";
+                        document.getElementById("animalPhoto").src = "https://i.natgeofe.com/k/6496b566-0510-4e92-84e8-7a0cf04aa505/red-fox-portrait_square.jpg";
+                    } else {
+                        alert("GAME OVER. The answer was fox.")
+                        document.getElementById("clue").innerHTML = "The Answer was Fox, please try again!";
+                        // console.log("Game Failed")
+                        document.getElementById("animalPhoto").src = "https://i.natgeofe.com/k/6496b566-0510-4e92-84e8-7a0cf04aa505/red-fox-portrait_square.jpg";
+                    }
+                }
+            }
+
+        }
+
+        function button2Handler() {
+
+            var guessOne;
+
+            guessOne = prompt("Clue: Lives in a pond.")
+
+            if (guessOne == "frog" || guessOne == "Frog") {
+
+                document.getElementById("clue").innerHTML = "Well Done!";
+                document.getElementById("animalPhoto").src = "https://cdn.britannica.com/84/206384-050-00698723/Javan-gliding-tree-frog.jpg";
+
+            } else {
+                var guessTwo;
+
+                guessTwo = prompt("Clue: Can be poisonous");
+
+
+                if (guessTwo == "frog" || guessTwo == "Frog") {
+                    document.getElementById("clue").innerHTML = "Well Done!";
+                    document.getElementById("animalPhoto").src = "https://cdn.britannica.com/84/206384-050-00698723/Javan-gliding-tree-frog.jpg";
+                } else {
+                    var guessThree;
+
+                    guessThree = prompt("Final Clue: Likes to eat flies");
+
+                    if (guessThree == "frog" || guessThree == "Frog") {
+                        document.getElementById("clue").innerHTML = "Well Done!";
+                        document.getElementById("animalPhoto").src = "https://cdn.britannica.com/84/206384-050-00698723/Javan-gliding-tree-frog.jpg";
+                    } else {
+                        alert("GAME OVER. The answer was frog.")
+                        document.getElementById("clue").innerHTML = "The Answer was Frog, please try again!";
+                        // console.log("Game Failed")
+                        document.getElementById("animalPhoto").src = "https://cdn.britannica.com/84/206384-050-00698723/Javan-gliding-tree-frog.jpg";
+                    }
+                }
+            }
+
+        }
+
+        function button3Handler() {
+
+            var guessOne;
+
+            guessOne = prompt("Clue: Lives in a burrow.")
+
+            if (guessOne == "rabbit" || guessOne == "Rabbit") {
+
+                document.getElementById("clue").innerHTML = "Well Done!";
+                document.getElementById("animalPhoto").src = "https://i.pinimg.com/564x/2a/7e/f4/2a7ef42f53c77aff9430de39e5dac24b--rabbits.jpg";
+
+            } else {
+                var guessTwo;
+
+                guessTwo = prompt("Clue: Can be a pet");
+
+
+                if (guessTwo == "rabbit" || guessTwo == "Rabbit") {
+                    document.getElementById("clue").innerHTML = "Well Done!";
+                    document.getElementById("animalPhoto").src = "https://i.pinimg.com/564x/2a/7e/f4/2a7ef42f53c77aff9430de39e5dac24b--rabbits.jpg";
+                } else {
+                    var guessThree;
+
+                    guessThree = prompt("Final Clue: Likes to eat carrots");
+
+                    if (guessThree == "rabbit" || guessThree == "Rabbit") {
+                        document.getElementById("clue").innerHTML = "Well Done!";
+                        document.getElementById("animalPhoto").src = "https://i.pinimg.com/564x/2a/7e/f4/2a7ef42f53c77aff9430de39e5dac24b--rabbits.jpg";
+                    } else {
+                        alert("GAME OVER. The answer was rabbit.")
+                        document.getElementById("clue").innerHTML = "The Answer was Rabbit, please try again!";
+                        document.getElementById("animalPhoto").src = "https://i.pinimg.com/564x/2a/7e/f4/2a7ef42f53c77aff9430de39e5dac24b--rabbits.jpg";
+                    }
+                }
+            }
+
+        }
+
+
+
+        /// Code for hovers.
+
+        function hoverHandler() {
+
+            document.getElementById("guessButton1").style.backgroundColor = "red";
+        }
+
+        function leaveHandler() {
+            document.getElementById("guessButton1").style.backgroundColor = "orange";
+        }
+
+        function hoverHandler1() {
+
+            document.getElementById("guessButton2").style.backgroundColor = "red";
+        }
+
+        function leaveHandler1() {
+            document.getElementById("guessButton2").style.backgroundColor = "orange";
+        }
+
+        function hoverHandler2() {
+
+            document.getElementById("guessButton3").style.backgroundColor = "red";
+        }
+
+        function leaveHandler2() {
+            document.getElementById("guessButton3").style.backgroundColor = "orange";
+        }
+    </script>
+</head>
+
+<body
+    style="text-align:center; border: 1px solid orange; width: 50%; margin:auto; box-shadow: 2px 2px grey; display:flex; flex-direction: column; align-items: center; ">
+
+    <h1>Guess The Animal</h1>
+
+    <p id="clue">Guess the 3 animals by clicking on the buttons below.</p>
+
+    <div style="display:flex">
+        <button onclick="button1Handler()" onmouseover="hoverHandler()" onmouseleave="leaveHandler()" id="guessButton1"
+            style="background-color:orange; padding:5px 10px 5px 10px; font-weight:bold; border-radius:25px;"
+            class="startButton">Animal
+            1</button>
+
+        <button onclick="button2Handler()" onmouseover="hoverHandler1()" onmouseleave="leaveHandler1()"
+            id="guessButton2"
+            style="background-color:orange; padding:5px 10px 5px 10px; font-weight:bold; border-radius:25px;"
+            class="startButton">Animal
+            2</button>
+
+        <button onclick="button3Handler()" onmouseover="hoverHandler2()" onmouseleave="leaveHandler2()"
+            id="guessButton3"
+            style="background-color:orange; padding:5px 10px 5px 10px; font-weight:bold; border-radius:25px;"
+            class="startButton">Animal
+            3</button>
+    </div>
+
+    <img src="https://media.istockphoto.com/id/1334419989/photo/3d-red-question-mark.jpg?b=1&s=170667a&w=0&k=20&c=nTtCgfQobXMT1NZOB9MDy_kHeIdS_A6O2XqckU1bL5M="
+        id="animalPhoto" style="width:500px; height:500px; border: 10px 10px solid red;">
+
+</body>
+
+</html>
